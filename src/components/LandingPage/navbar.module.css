@@ -1,0 +1,29 @@
+.navbar_body{
+    width: 100vw;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+}
+.navbar_icon{
+    flex: 1;
+    width: 100%;
+}
+.navbar_tab{
+    flex: 2.5;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content:space-evenly ; */
+    align-items: center;
+    color: aliceblue;
+    height: fit-content;
+    
+
+
+}
+ img{
+    height:70px;
+    width: 70px;
+}

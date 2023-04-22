@@ -1,0 +1,20 @@
+.Navbar_heading * {
+  text-align: center;
+  color: white;
+}
+.Navbar_heading h4 {
+  font-weight: 400;
+  color:'white'
+}
+
+.Navbar_tab {
+  color: white;
+  border: 1px solid white;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.Navbar_tab:hover{
+    border: 1px solid rgb(228, 187, 187);
+
+}

@@ -1,0 +1,9 @@
+.popular_heading{
+    text-align: center;
+}
+.popular_heading h2{
+    font-weight: bold;
+}
+.popular_heading span {
+    color: #d01443;
+}

@@ -1,0 +1,9 @@
+.food_variety{
+    text-align: center;
+}
+.food_variety h2{
+    font-weight: bold;
+}
+.food_variety span {
+    color: #d01443;
+}

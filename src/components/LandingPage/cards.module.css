@@ -1,0 +1,19 @@
+.pink_text{
+   
+    display: flex;
+    justify-content: center;  
+    
+}
+.pink_text span{
+    display: inline-block;
+    font-weight: bold;
+}
+.card_body{
+    margin :15px;
+}
+.card_para{
+    text-align:center;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+}

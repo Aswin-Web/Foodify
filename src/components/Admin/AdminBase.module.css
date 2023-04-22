@@ -1,0 +1,24 @@
+.Admin_body{
+    position: relative;
+  
+    
+}
+.Admin_Navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    background-color:#d01443;
+    padding:15px;
+
+
+}
+.Admin_display{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    min-height: max-content;
+    padding: 15px;
+}

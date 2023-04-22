@@ -1,0 +1,20 @@
+.speciality_heading{
+    font-weight: bolder ;
+    
+}
+.speciality_heading span{
+    color: #d01443;
+    
+}
+
+.heading_container h2{
+    text-align: center;
+    margin-top: 2rem ;
+    margin-bottom: 1rem;
+    font-weight: bold ;
+}
+.paragraph_container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
