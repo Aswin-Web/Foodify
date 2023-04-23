@@ -1,0 +1,22 @@
+.container{
+    display:flex;
+    gap:4rem;
+    align-items: center;
+}
+.container_img{
+    flex:.5;
+    width: 100%;
+
+    
+}
+.container_text{
+    flex:1;
+    width: 100%;
+    
+}
+
+.container_img img{
+    width: 100%;
+    height: min-content;
+    object-fit: cover;
+}

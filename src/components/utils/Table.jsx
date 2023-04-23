@@ -6,13 +6,13 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import BorderColorOutlinedIcon from "@mui/icons-material/BorderColorOutlined";
 import { Avatar } from "@mui/material";
 
 
 
 export default function BasicTable(props) {
-    const {titledata, contentdata}=props
+    const { titledata, contentdata, tableData } = props;
+    console.log(Object.values(contentdata[0]));
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -29,30 +29,17 @@ export default function BasicTable(props) {
               <TableRow
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
-                <TableCell>{item.sl_no}</TableCell>
-                <TableCell component="th" sx={
-                    {
-                        display:'flex',
-                        alignItems:'center',
-                    }
-                }>
-                  <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg"  sx={{
-                    padding:'5px',
-                    marginRight:"8px"
-                  }}
-                    />
-                  {item.name}
-                </TableCell>
-                <TableCell>{item.quantity}</TableCell>
-                <TableCell>{item.price}</TableCell>
-                <TableCell>{item.status}</TableCell>
-                {(item.edit)?<TableCell>
+
+                {Object.values(item).map((row,index)=><TableCell key={index}>{row}</TableCell>)}
+                
+                
+                {/* {(item.edit)?<TableCell>
                   <BorderColorOutlinedIcon
                     sx={{
                       color: "#d01443",
                     }}
                   />
-                </TableCell>:null}
+                </TableCell>:null} */}
                 
               </TableRow>
             </>

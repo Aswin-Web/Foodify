@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import StarsIcon from "@mui/icons-material/Stars";
 import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Popup from '../utils/Dialog'
 import { Box } from "@mui/material";
 import CreateNewCard from "../Admin/Utils/CreateNewCard";
@@ -15,7 +16,7 @@ import CreateNewCard from "../Admin/Utils/CreateNewCard";
 export default function ImgMediaCard(props) {
   const {isAdmin}=props
   return (
-    <Card sx={{ maxWidth: 300, margin: "15px" }}>
+    <Card sx={{ maxWidth: 300, margin: "15px", border: "1px solid grey" }}>
       {isAdmin ? (
         <Box
           sx={{
@@ -37,13 +38,23 @@ export default function ImgMediaCard(props) {
             }
             BodyField={<CreateNewCard />}
           />
-          
+
           <Typography variant="body1" color="initial">
             <DeleteForeverIcon sx={{ color: "#d01443", cursor: "pointer" }} />
           </Typography>
         </Box>
       ) : (
-        <></>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "flex-end",
+            flexDirection: "row",
+            margin: "0 1rem",
+            padding:'1rem'
+          }}
+        >
+          <FavoriteBorderIcon />
+        </Box>
       )}
       <CardMedia
         component="img"

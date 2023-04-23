@@ -19,6 +19,10 @@ import NotificationModule from "./components/Admin/Notification.module";
 import CouponModule from "./components/Admin/CouponModule";
 import LogoutModule from "./components/Admin/LogoutModule";
 import OrderInfo from "./components/Admin/OrderInfo";
+import Profile from "./components/Profile/main";
+import Wishlist from "./components/Profile/Wishlist";
+import Order from "./components/Profile/Order";
+import IndividualOrder from "./components/Profile/IndividualOrder";
 
 function App() {
   return (
@@ -31,6 +35,10 @@ function App() {
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/shop/*" element={<Item />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/order" element={<Order />} />
+          <Route path="/order/*" element={<IndividualOrder />} />
         </Route>
         {/* Admin Routes */}
         <Route path="/admin" element={<AdminBase />}>
